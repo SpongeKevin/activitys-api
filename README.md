@@ -8,6 +8,10 @@
 
 2. 啟動 DemoApi.sln 執行專案
 
+3. 修改 Startup.cs 中的 options.UseMySql 連線字串為欲連接 MySQL 之參數
+
+4. 啟動 Api 專案
+
 ## 使用技術
 * language
     * C#
