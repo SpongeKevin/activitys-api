@@ -27,8 +27,7 @@ namespace DemoApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
-            services.AddDbContext<DbContext>(options => options.UseMySql(
-             @"Server=127.0.0.1; Port=3306;User Id=root;Password=!QAZ2wsx;Database=Activitys"));
+            services.AddDbContext<DbContext>(options => options.UseMySql(Configuration.GetConnectionString("Base")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

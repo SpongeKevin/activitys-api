@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DemoApi.Controllers
 {
     [ApiController]
-    [Route("/api/orders")]
+    [Route("/api/[Controller]")]
     public class OrderController : ControllerBase
     {
         private readonly DbContext _db;

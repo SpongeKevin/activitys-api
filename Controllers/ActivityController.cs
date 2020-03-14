@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 namespace DemoApi.Controllers
 {
     [ApiController]
-    [Route("/api/activitys")]
+    [Route("/api/[Controller]")]
     public class ActivityController : ControllerBase
     {
         private readonly DbContext _db;
